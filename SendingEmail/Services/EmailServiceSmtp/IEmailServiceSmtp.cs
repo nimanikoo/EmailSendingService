@@ -4,7 +4,7 @@ namespace SendingEmail.Services
 {
     public interface IEmailServiceSmtp
     {
-        void SendEmail(EmailDto emailRequest);
+        void SendEmail(EmailDetails emailRequest);
 
     }
 }

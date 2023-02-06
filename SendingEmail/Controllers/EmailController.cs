@@ -20,13 +20,11 @@ namespace SendingEmail.Controllers
             _emailService = emailService;
         }
 
-        [HttpPost]
-        public IActionResult SendEmail(EmailDto EmailRequest)
+        [HttpPost("/EmailSender")]
+        public IActionResult SendEmail(EmailDetails EmailRequest)
         {
             _emailService.SendEmail(EmailRequest);
             return Ok();
-
         }
-
     }
 }
